@@ -1,0 +1,156 @@
+@charset "utf-8";
+/* CSS Document */
+.header {
+	width: 100%;
+	max-width: 2500px;
+	height: auto;
+	max-height: 869px;
+	background-image:url(../images/BG.jpg);
+	background-size: cover;
+	padding-top: 10%;
+}
+
+.img-container {
+	border-radius: 50%;
+	width: 16rem;
+    margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+span.fname-text {
+	padding-top: 40px;
+	text-align:center;
+	font-family: 'Lato Light', sans-serif;
+	font-size: 60px;
+	color: #f7f7f7;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+span.lname-text {
+	text-align:center;
+	font-family: 'Lato Medium', sans-serif;
+	font-size: 80px;
+	color: #8cbcd0;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+span.post-text {
+	padding-top: 20px;
+	text-align:center;
+	font-family: 'Lato Light', sans-serif;
+	font-size: 22px;
+	color: #f7f7f7;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.divider {
+	width: 68.57%;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 10px;
+	border-bottom: 2px solid #939393;
+	padding-top: 75px;
+}
+
+.aboutme {
+	/*background-color: #f5f5f5;*/
+	background-color: #23282A;
+	width: 100%;
+	max-width: 2500px;
+	height: auto;
+	background-size: cover;
+}
+
+.text-container {
+	width: 68.57%;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+
+span.title-text {
+	text-align: left;
+	font-family: 'Lato Light', sans-serif;
+	font-size: 60px;
+	color: #8cbcd0;
+	padding-bottom: 50px;
+}
+
+p.paragraph-text {
+	font-family: 'Lato Light', sans-serif;
+	font-size: 18px;
+	color: #939393;
+	text-align:justify;
+	padding-top: 30px;
+}
+
+#skills {
+	/*background-color: #ffffff;*/
+	background-color: #f5f5f5;
+	width: 100%;
+	max-width: 2500px;
+	height: auto;
+	background-size: cover;
+}
+
+#skills-wrapper {
+	width: 100%;
+	padding-top: 50px;
+	max-width: 2500px;
+	height: auto;
+}
+
+.content-text-bold {
+	font-family: 'Lato Bold', sans-serif;
+	font-size: 18px;
+	color: #939393;
+	text-align: left;
+	padding-bottom: 10px;
+}
+
+#myProgress {
+    width: 100%;
+    background-color: #f5f5f5;
+}
+#myBar1, #myBar2, #myBar3, #myBar4, #myBar5, #myBar6, #myBar7, #myBar8, #myBar9, #myBar10, #myBar11, #myBar12, 
+#myBar13, #myBar14, #myBar15 {
+    width: 1%;
+    height: 12px;
+    background-color: #8cbcd0;
+	text-align: center; /* To center it horizontally (if you want) */
+    line-height: 12px; /* To center it vertically */
+	font-family: 'Lato Light', sans-serif;
+	font-size: 11px;
+	color: white;
+	margin-bottom: 20px;
+}
+
+.button {
+    background-color: #8cbcd0;
+    border: none;
+	font-family: 'Lato Bold', sans-serif;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	margin-bottom:20px;
+}
+
+.clear {
+    clear: both;
+}
+
+	
+	
+	
