@@ -12,106 +12,126 @@
         <!--JS Scripts-->
         <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
         <script src="js/skills.js"></script>
+        <script>
+			var myVar;
+
+			function myFunction() {
+			    myVar = setTimeout(showPage, 3000);
+			}
+
+			function showPage() {
+			  document.getElementById("loader").style.display = "none";
+			  document.getElementById("pgContent").style.display = "block";
+			}
+		</script>
 		<title>Leandro Arellano</title>
 	</head>
-<body>
-	<div class="header">
-    	<img class="img-container" src="images/leandro.jpg">
-        <span class="fname-text">Leandro</span>
-        <span class="lname-text">Arellano</span>
-        <span class="post-text">Test Automation Senior Analyst</span>
-        <div class="divider"></div>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-    </div>
-    <div class="aboutme">
-    	<div class="text-container">
-    		<span class="title-text">Who am i?</span>
-            <p class="paragraph-text">
-            	Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec 		urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Nulla vitae mauris non felis mollis faucibus.Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna. Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis.
-            </p>
-            <p class="paragraph-text">
-            	Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec 		urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Nulla vitae mauris non felis mollis faucibus.Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna. Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis.
-            </p>
-        </div>
-    </div>
-    <div id="skills">
-    	<div class="text-container">
-        	<span class="title-text">Skills</span>
-            <div id="skills-wrapper">
-            	<!--<button class="button" onclick="callAll()">Show</button>-->
-            	<div class="content-text-bold">Selenium WebDriver and IDE</div>
-                <div id="myProgress">
-  					<div id="myBar1">0%</div>
-				</div>
-                <div class="content-text-bold">Unified Functional Testing (HP UFT)</div>
-                <div id="myProgress">
-  					<div id="myBar2">0%</div>
-				</div>
-            	<div class="content-text-bold">Java</div>
-            	<div id="myProgress">
-  					<div id="myBar3">0%</div>
-				</div>
-            	<div class="content-text-bold">Visual Basic .NET and VBA</div>
-               	<div id="myProgress">
-  					<div id="myBar4">0%</div>
-				</div>
-                <div class="content-text-bold">HP ALM</div>
-               	<div id="myProgress">
-  					<div id="myBar5">0%</div>
-				</div>
-                <div class="content-text-bold">Maven</div>
-               	<div id="myProgress">
-  					<div id="myBar6">0%</div>
-				</div>
-                <div class="content-text-bold">TestNG</div>
-               	<div id="myProgress">
-  					<div id="myBar7">0%</div>
-				</div>
-                <div class="content-text-bold">ExtentReports</div>
-               	<div id="myProgress">
-  					<div id="myBar8">0%</div>
-				</div>
-                <div class="content-text-bold">SQL</div>
-               	<div id="myProgress">
-  					<div id="myBar9">0%</div>
-				</div>
-                <div class="content-text-bold">Firepath, XPath Concepts</div>
-               	<div id="myProgress">
-  					<div id="myBar10">0%</div>
-				</div>
-                <div class="content-text-bold">HTML5</div>
-               	<div id="myProgress">
-  					<div id="myBar11">0%</div>
-				</div>
-                <div class="content-text-bold">CSS</div>
-               	<div id="myProgress">
-  					<div id="myBar12">0%</div>
-				</div>
-                <div class="content-text-bold">JavaScript and JQuery</div>
-               	<div id="myProgress">
-  					<div id="myBar13">0%</div>
-				</div>
-                <div class="content-text-bold">PHP</div>
-               	<div id="myProgress">
-  					<div id="myBar14">0%</div>
-				</div>
-                <div class="content-text-bold">Cisco</div>
-               	<div id="myProgress">
-  					<div id="myBar15">0%</div>
-				</div>
-             </div>
-         </div>
-    </div>
+<body onload="myFunction()">
+	<div id="loader"></div>
+	<div class="animate-page" id="pgContent" style="display:none;">
+		<div class="header">
+	    	<img class="img-container" id="pPic" src="images/leandro.jpg">
+	        <span class="fname-text">Leandro</span>
+	        <span class="lname-text">Arellano</span>
+	        <span class="post-text">Test Automation Senior Analyst</span>
+	        <div class="divider"></div>
+	        <br />
+	        <br />
+	        <br />
+	        <br />
+	        <br />
+	        <br />
+	        <br />
+	        <br />
+	        <br />
+	        <br />
+	        <br />
+	        <br />
+	    </div>
+	    <div id="aboutme">
+	    	<div class="text-container">
+	    		<span class="title-text">Who am i?</span>
+	            <p class="paragraph-text">
+	            	Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec 		urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Nulla vitae mauris non felis mollis faucibus.Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna. Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis.
+	            </p>
+	            <p class="paragraph-text">
+	            	Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec 		urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Nulla vitae mauris non felis mollis faucibus.Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna. Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis.
+	            </p>
+	        </div>
+	    </div>
+	    <div id="skills">
+	    	<div class="text-container">
+	        	<span class="title-text">Skills</span>
+	            <div id="skills-wrapper">
+	            	<!--<button class="button" onclick="callAll()">Show</button>-->
+	            	<div class="content-text-bold">Selenium WebDriver and IDE</div>
+	                <div id="myProgress">
+	  					<div id="myBar1">0%</div>
+					</div>
+	                <div class="content-text-bold">Unified Functional Testing (HP UFT)</div>
+	                <div id="myProgress">
+	  					<div id="myBar2">0%</div>
+					</div>
+	            	<div class="content-text-bold">Java</div>
+	            	<div id="myProgress">
+	  					<div id="myBar3">0%</div>
+					</div>
+	            	<div class="content-text-bold">Visual Basic .NET and VBA</div>
+	               	<div id="myProgress">
+	  					<div id="myBar4">0%</div>
+					</div>
+	                <div class="content-text-bold">HP ALM</div>
+	               	<div id="myProgress">
+	  					<div id="myBar5">0%</div>
+					</div>
+	                <div class="content-text-bold">Maven</div>
+	               	<div id="myProgress">
+	  					<div id="myBar6">0%</div>
+					</div>
+	                <div class="content-text-bold">TestNG</div>
+	               	<div id="myProgress">
+	  					<div id="myBar7">0%</div>
+					</div>
+	                <div class="content-text-bold">ExtentReports</div>
+	               	<div id="myProgress">
+	  					<div id="myBar8">0%</div>
+					</div>
+	                <div class="content-text-bold">SQL</div>
+	               	<div id="myProgress">
+	  					<div id="myBar9">0%</div>
+					</div>
+	                <div class="content-text-bold">Firepath, XPath Concepts</div>
+	               	<div id="myProgress">
+	  					<div id="myBar10">0%</div>
+					</div>
+	                <div class="content-text-bold">HTML5</div>
+	               	<div id="myProgress">
+	  					<div id="myBar11">0%</div>
+					</div>
+	                <div class="content-text-bold">CSS</div>
+	               	<div id="myProgress">
+	  					<div id="myBar12">0%</div>
+					</div>
+	                <div class="content-text-bold">JavaScript and JQuery</div>
+	               	<div id="myProgress">
+	  					<div id="myBar13">0%</div>
+					</div>
+	                <div class="content-text-bold">PHP</div>
+	               	<div id="myProgress">
+	  					<div id="myBar14">0%</div>
+					</div>
+	                <div class="content-text-bold">Cisco</div>
+	               	<div id="myProgress">
+	  					<div id="myBar15">0%</div>
+					</div>
+	             </div>
+	         </div>
+	    </div>
+	    <div id="experience">
+	    	<div class="text-container">
+	    		<span class="title-text">Experience</span>
+	    	</div>
+	    </div>
+	</div>
 </body>
 </html>
