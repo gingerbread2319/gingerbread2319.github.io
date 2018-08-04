@@ -67,8 +67,16 @@ span.post-text {
 	max-width: 2500px;
 	height: auto;
 	background-size: cover;
+	
 }
-
+#aboutContainer{
+	-webkit-animation-name: animateAbout;
+  	-webkit-animation-duration: 2s;
+  	-webkit-transition-timing-function: ease-in;
+  	animation-name: animateAbout;
+  	animation-duration: 2s;
+  	transition-timing-function: ease-in;
+}
 .text-container {
 	width: 68.57%;
 	max-width: 1200px;
@@ -193,10 +201,10 @@ p.paragraph-text {
   /*position: relative;*/
   -webkit-animation-name: animatebottom;
   -webkit-animation-duration: 1s;
-  -webkit-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease;
   animation-name: animatebottom;
   animation-duration: 2s;
-  transition-timing-function: ease-in;
+  transition-timing-function: ease;
 }
 
 @-webkit-keyframes animatebottom {
@@ -207,5 +215,15 @@ p.paragraph-text {
 @keyframes animatebottom { 
   from{opacity:0 } 
   to{opacity:1 }
+}
+
+@-webkit-keyframes animateAbout {
+  from {-webkit-transform: translateY(10%); opacity:0 } 
+  to {-webkit-transform: translateY(0); opacity:1 }
+}
+
+@keyframes animateAbout { 
+  from{transform: translateY(10%); opacity:0 } 
+  to{transform: translateY(0); opacity:1 }
 }
 	

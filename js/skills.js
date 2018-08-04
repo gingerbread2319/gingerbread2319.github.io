@@ -242,7 +242,7 @@ function move1() {
 			}
 			var counter = 0;
 			$(window).scroll(function() {
-			    if (checkVisible($('#skills')) && counter == 0) {
+			    if (checkVisible($('#skills-wrapper')) && counter == 0) {
 			        callAll();
 			        counter = 1;
 			    } else {
