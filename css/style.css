@@ -291,6 +291,27 @@ p.paragraph-text {
   	animation-duration: 1.5s;
 }
 
+#expTitle {
+	-webkit-animation-name: animateExpTitle;
+  	-webkit-animation-duration: 1.4s;
+  	/*-webkit-transition-timing-function: ease;*/
+  	animation-name: animateExpTitle;
+  	animation-duration: 1.4s;
+  	/*transition-timing-function: ease;*/
+}
+
+#company1 {
+	-webkit-animation-name: animateCompanyOne;
+  	-webkit-animation-duration: 2s;
+  	/*-webkit-transition-timing-function: ease;*/
+  	animation-name: animateCompanyOne;
+  	animation-duration: 2s;
+  	/*transition-timing-function: ease;*/
+}
+
+.pop {
+	-webkit-animation: scale 0.7s ease-out;
+}
 
 /*LOADER ANIMATION*/
 /* Center the loader */
@@ -382,7 +403,7 @@ p.paragraph-text {
   to{transform: translateY(0); opacity:1 }
 }
 
-@-webkit-keyframes animateAboutTitle{
+@-webkit-keyframes animateAboutTitle {
   from {-webkit-transform: translateY(20%); opacity:0 } 
   to {-webkit-transform: translateY(0); opacity:1 }
 }
@@ -392,7 +413,7 @@ p.paragraph-text {
   to{transform: translateY(0); opacity:1 }
 }
 
-@-webkit-keyframes animateParagraphs{
+@-webkit-keyframes animateParagraphs {
   from {-webkit-transform: translateY(20%); opacity:0 } 
   to {-webkit-transform: translateY(0); opacity:1 }
 }
@@ -402,12 +423,34 @@ p.paragraph-text {
   to{transform: translateY(0); opacity:1 }
 }
 
+@-webkit-keyframes animateExpTitle {
+  from {-webkit-transform: translateY(20%); opacity:0 } 
+  to {-webkit-transform: translateY(0); opacity:1 }
+}
 
+@keyframes animateExpTitle { 
+  from{transform: translateY(20%); opacity:0 } 
+  to{transform: translateY(0); opacity:1 }
+}
 
+@-webkit-keyframes animateCompanyOne {
+  from {-webkit-transform: translateY(20%); opacity:0 } 
+  to {-webkit-transform: translateY(0); opacity:1 }
+}
 
+@keyframes animateCompanyOne { 
+  from{transform: translateY(20%); opacity:0 } 
+  to{transform: translateY(0); opacity:1 }
+}
 
-
-
+@-webkit-keyframes scale {
+    0% {
+        -webkit-transform: scale(0.5);
+    }
+    100% {
+        -webkit-transform: scale(1);
+    }
+}
 
 
 
