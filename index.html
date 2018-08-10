@@ -17,13 +17,15 @@
 			var myVar;
 
 			function myFunction() {
-			    myVar = setTimeout(showPage, 3000);
+			    myVar = setTimeout(showPage, 1000);
 			}
 
 			function showPage() {
 			  document.getElementById("loader").style.display = "none";
 			  document.getElementById("pgContent").style.display = "block";
-			}
+			  document.getElementById("pPic").style.display = "block";
+			  document.getElementById("fname-text").style.display = "block";
+			  document.getElementById("lname-text").style.display = "block";			}
 		</script>
 		<title>Leandro Arellano</title>
 	</head>
@@ -31,9 +33,9 @@
 	<div id="loader"></div>
 	<div class="animate-page" id="pgContent" style="display:none;">
 		<div class="header">
-	    	<img class="img-container" id="pPic" src="images/leandro.jpg">
-	        <span class="fname-text">Leandro</span>
-	        <span class="lname-text">Arellano</span>
+	    	<img class="img-container" id="pPic" src="images/leandro.jpg" style="display:none;">
+	        <span id="fname-text" style="display:none;">Leandro</span>
+	        <span id="lname-text" style="display:none;">Arellano</span>
 	        <span class="post-text">Test Automation Senior Analyst</span>
 	        <div class="divider"></div>
 	        <br />
@@ -131,7 +133,60 @@
 	    <div id="experience">
 	    	<div class="text-container">
 	    		<span class="title-text">Experience</span>
+	    		<div class="exp-container" id="latest">
+	    			<div class="columnleft">
+	    				<div class="dot"></div>
+	    				<div class="verticalLine"></div>
+	    			</div>
+	    			<div class="columnmid">
+	    				<span class="company-text">Infor, PSSC Inc.</span>
+	    				<div class="position-text"><i>Quality Assurance Analyst (Automation)</i></div>
+	    				<p class="company-address">Uptown Place Tower 1, 11th Dr, Bonifacio Global City, Taguig, Philippines</p>
+	    			</div>
+	    			<div class="columnright">
+	    				<p class="company-desc">
+	    					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec 		urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Nulla vitae mauris non felis mollis faucibus.Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna. Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis.
+	    				</p>
+	    			</div>
+	    		</div>
+
+	    		<div class="exp-container">
+	    			<div class="columnleft">
+	    				<div class="dot"></div>
+	    				<div class="verticalLine"></div>
+	    			</div>
+	    			<div class="columnmid">
+	    				<span class="company-text">Accenture Inc.</span>
+	    				<div class="position-text"><i>Test Automation Senior Analyst</i></div>
+	    				<p class="company-address">Uptown Place Tower 1, 11th Dr, Bonifacio Global City, Taguig, Philippines</p>
+	    			</div>
+	    			<div class="columnright">
+	    				<p class="company-desc">
+	    					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec 		urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Nulla vitae mauris non felis mollis faucibus.Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna. Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis.
+	    				</p>
+	    			</div>
+	    		</div>
+
+	    		<div class="exp-container">
+	    			<div class="columnleft">
+	    				<div class="dot"></div>
+	    				<div class="verticalLine"></div>
+	    			</div>
+	    			<div class="columnmid">
+	    				<span class="company-text">Accenture Inc.</span>
+	    				<div class="position-text"><i>Test Automation Senior Analyst</i></div>
+	    				<p class="company-address">Uptown Place Tower 1, 11th Dr, Bonifacio Global City, Taguig, Philippines</p>
+	    			</div>
+	    			<div class="columnright">
+	    				<p class="company-desc">
+	    					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec 		urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Nulla vitae mauris non felis mollis faucibus.Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna. Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis.
+	    				</p>
+	    			</div>
+	    		</div>
 	    	</div>
+	    	</div>
+
+
 	    </div>
 	</div>
 </body>
