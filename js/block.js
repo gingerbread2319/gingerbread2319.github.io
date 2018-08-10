@@ -1,10 +1,16 @@
 var Aboutcounter = 0;
+var paragraph1Counter = 0;
+var paragraph2Counter = 0;
 $(window).scroll(function() {
-    if (checkVisible($('#aboutContainer')) && Aboutcounter == 0) {
+    if (checkVisible($('#aboutTitle')) && Aboutcounter == 0) {
         showAbout();
         Aboutcounter = 1;
-    } else {
-        
+    } else if (checkVisible($('#paragraphs')) && paragraph1Counter == 0) {
+        showParags();
+        paragraph1Counter = 1;
+    } else if (checkVisible($('#paragraphs2')) && paragraph2Counter == 0) {
+        showParags2()
+        paragraph2Counter = 1;
     }
 });
 
@@ -20,5 +26,13 @@ function checkVisible( elm, eval ) {
 }
 
 function showAbout() {
-	document.getElementById("aboutContainer").style.display = "block";
+	document.getElementById("aboutTitle").style.display = "block";
+}
+
+function showParags() {
+    document.getElementById("paragraphs").style.display = "block";
+}
+
+function showParags2() {
+    document.getElementById("paragraphs2").style.display = "block";
 }

@@ -17,10 +17,10 @@
 	margin-right: auto;
 	display: block;
 	-webkit-animation-name: animateimg;
-  	-webkit-animation-duration: 2s;
+  	-webkit-animation-duration: 1s;
   	-webkit-transition-timing-function: ease-in;
   	animation-name: animateimg;
-  	animation-duration: 2s;
+  	animation-duration: 1s;
   	transition-timing-function: ease-in;
 }
 
@@ -34,10 +34,10 @@
 	margin-right: auto;
 	display: block;
 	-webkit-animation-name: animatefname;
-  	-webkit-animation-duration: 2.5s;
+  	-webkit-animation-duration: 1.5s;
   	-webkit-transition-timing-function: ease-in;
   	animation-name: animatefname;
-  	animation-duration: 2.5s;
+  	animation-duration: 1.5s;
   	transition-timing-function: ease-in;
 }
 
@@ -50,10 +50,10 @@
 	margin-right: auto;
 	display: block;
 	-webkit-animation-name: animatelname;
-  	-webkit-animation-duration: 3s;
+  	-webkit-animation-duration: 1.7s;
   	-webkit-transition-timing-function: ease-in;
   	animation-name: animatelname;
-  	animation-duration: 3s;
+  	animation-duration: 1.7s;
   	transition-timing-function: ease-in;
 }
 
@@ -136,7 +136,7 @@ p.paragraph-text {
 	font-size: 18px;
 	color: #939393;
 	text-align:justify;
-	padding-top: 30px;
+	padding-top: 15px;
 }
 
 .company-address {
@@ -274,9 +274,22 @@ p.paragraph-text {
   	z-index:3;
 }
 
+#aboutTitle {
+	-webkit-animation-name: animateAboutTitle;
+  	-webkit-animation-duration: 1.4s;
+  	/*-webkit-transition-timing-function: ease;*/
+  	animation-name: animateAboutTitle;
+  	animation-duration: 1.4s;
+  	/*transition-timing-function: ease;*/
+  	margin-bottom: -30px;
+}
 
-
-
+#paragraphs, #paragraphs2 {
+	-webkit-animation-name: animateParagraphs;
+  	-webkit-animation-duration: 1.5s;
+  	animation-name: animateParagraphs;
+  	animation-duration: 1.5s;
+}
 
 
 /*LOADER ANIMATION*/
@@ -368,6 +381,35 @@ p.paragraph-text {
   from{transform: translateY(60%); opacity:0 } 
   to{transform: translateY(0); opacity:1 }
 }
+
+@-webkit-keyframes animateAboutTitle{
+  from {-webkit-transform: translateY(20%); opacity:0 } 
+  to {-webkit-transform: translateY(0); opacity:1 }
+}
+
+@keyframes animateAboutTitle { 
+  from{transform: translateY(20%); opacity:0 } 
+  to{transform: translateY(0); opacity:1 }
+}
+
+@-webkit-keyframes animateParagraphs{
+  from {-webkit-transform: translateY(20%); opacity:0 } 
+  to {-webkit-transform: translateY(0); opacity:1 }
+}
+
+@keyframes animateParagraphs { 
+  from{transform: translateY(40%); opacity:0 } 
+  to{transform: translateY(0); opacity:1 }
+}
+
+
+
+
+
+
+
+
+
 
 /*media queries*/
 @media screen and (max-width: 600px) {
