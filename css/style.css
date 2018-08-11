@@ -104,13 +104,32 @@ span.post-text {
 	padding-bottom: 100px;
 }
 
-span.title-text {
+.title-text {
 	text-align: left;
 	font-family: 'Lato Light', sans-serif;
 	/*font-size: 60px;*/
 	font-size: 4.39vw;
 	color: #8cbcd0;
 	padding-bottom: 50px;
+}
+
+.link{
+	color: #8cbcd0;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.link:hover:after {
+  width:100%;
+}
+
+.link:after {
+  	content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #939393;
+    transition: width .3s;
 }
 
 span.company-text {
@@ -120,6 +139,10 @@ span.company-text {
 	font-size: 30px;
 	color: #8cbcd0;
 	margin-bottom: 15px;
+}
+
+.position-text:hover, .company-address:hover {
+	text-decoration: underline;
 }
 
 div.position-text {
@@ -297,15 +320,6 @@ p.paragraph-text {
   	/*-webkit-transition-timing-function: ease;*/
   	animation-name: animateExpTitle;
   	animation-duration: 1.4s;
-  	/*transition-timing-function: ease;*/
-}
-
-#company1 {
-	-webkit-animation-name: animateCompanyOne;
-  	-webkit-animation-duration: 2s;
-  	/*-webkit-transition-timing-function: ease;*/
-  	animation-name: animateCompanyOne;
-  	animation-duration: 2s;
   	/*transition-timing-function: ease;*/
 }
 

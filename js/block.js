@@ -5,6 +5,7 @@ var expTitleCounter = 0;
 var expTitleDesc1Counter = 0;
 var expTitleDesc2Counter = 0;
 var expCompany1Counter = 0;
+var expCompany2Counter = 0;
 $(window).scroll(function() {
     if (checkVisible($('#aboutTitle')) && Aboutcounter == 0) {
         showAbout();
@@ -27,6 +28,9 @@ $(window).scroll(function() {
     } else if (checkVisible($('#company1')) && expCompany1Counter == 0) {
         showCompany1();
         expCompany1Counter = 1;
+    } else if (checkVisible($('#company2')) && expCompany2Counter == 0) {
+        showCompany2();
+        expCompany2Counter = 1;
     }
 });
 
@@ -66,5 +70,9 @@ function showExpDesc2() {
 }
 
 function showCompany1() {
-    document.getElementById("company1").style.display = "block";
+    document.getElementById("company1").classList.add("pop");
+}
+
+function showCompany2() {
+    document.getElementById("company2").classList.add("pop");
 }
