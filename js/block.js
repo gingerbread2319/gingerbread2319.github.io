@@ -4,8 +4,11 @@ var paragraph2Counter = 0;
 var expTitleCounter = 0;
 var expTitleDesc1Counter = 0;
 var expTitleDesc2Counter = 0;
+var expTitleDesc3Counter = 0;
 var expCompany1Counter = 0;
 var expCompany2Counter = 0;
+var expCompany3Counter = 0;
+var skillsCounter = 0;
 $(window).scroll(function() {
     if (checkVisible($('#aboutTitle')) && Aboutcounter == 0) {
         showAbout();
@@ -31,6 +34,15 @@ $(window).scroll(function() {
     } else if (checkVisible($('#company2')) && expCompany2Counter == 0) {
         showCompany2();
         expCompany2Counter = 1;
+    } else if (checkVisible($('#java')) && skillsCounter == 0) {
+        showSkillsTitle();
+        skillsCounter = 1;
+    } else if (checkVisible($('#company3')) && expCompany3Counter == 0) {
+        showCompany3();
+        expCompany3Counter = 1;
+    } else if (checkVisible($('#latestExpDesc3')) && expTitleDesc3Counter == 0) {
+        showExpDesc3();
+        expTitleDesc3Counter = 1;
     }
 });
 
@@ -61,6 +73,10 @@ function showExpTitle() {
     document.getElementById("expTitle").style.display = "block";
 }
 
+function showSkillsTitle() {
+    document.getElementById("skillsTitle").style.display = "block";
+}
+
 function showExpDesc1() {
     document.getElementById("latestExpDesc").classList.add("pop");
 }
@@ -69,10 +85,18 @@ function showExpDesc2() {
     document.getElementById("latestExpDesc2").classList.add("pop");
 }
 
+function showExpDesc3() {
+    document.getElementById("latestExpDesc3").classList.add("pop");
+}
+
 function showCompany1() {
     document.getElementById("company1").classList.add("pop");
 }
 
 function showCompany2() {
     document.getElementById("company2").classList.add("pop");
+}
+
+function showCompany3() {
+    document.getElementById("company3").classList.add("pop");
 }

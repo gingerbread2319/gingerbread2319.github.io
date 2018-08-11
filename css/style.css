@@ -288,6 +288,10 @@ p.paragraph-text {
   z-index:2;
 }
 
+.educ {
+	background-color: #e8554e;
+}
+
 .verticalLine {
   	width: 50%;
   	max-width: 5px;
@@ -320,6 +324,16 @@ p.paragraph-text {
   	/*-webkit-transition-timing-function: ease;*/
   	animation-name: animateExpTitle;
   	animation-duration: 1.4s;
+  	/*transition-timing-function: ease;*/
+}
+
+#skillsTitle, #educationTitle {
+	-webkit-animation-name: animateSkillsTitle;
+  	-webkit-animation-duration: 1.4s;
+  	/*-webkit-transition-timing-function: ease;*/
+  	animation-name: animateSkillsTitle;
+  	animation-duration: 1.4s;
+  	margin-bottom: -50px;
   	/*transition-timing-function: ease;*/
 }
 
@@ -443,6 +457,16 @@ p.paragraph-text {
 }
 
 @keyframes animateExpTitle { 
+  from{transform: translateY(20%); opacity:0 } 
+  to{transform: translateY(0); opacity:1 }
+}
+
+@-webkit-keyframes animateSkillsTitle {
+  from {-webkit-transform: translateY(20%); opacity:0 } 
+  to {-webkit-transform: translateY(0); opacity:1 }
+}
+
+@keyframes animateSkillsTitle {
   from{transform: translateY(20%); opacity:0 } 
   to{transform: translateY(0); opacity:1 }
 }
