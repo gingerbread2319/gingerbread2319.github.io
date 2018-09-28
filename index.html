@@ -1,197 +1,290 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <!-- Stylesheets-->
-		<link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" />
-        <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen" />
-		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-        
-        <!--JS Scripts-->
+	<!DOCTYPE html>
+	<html lang="en">
+	  <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="../../favicon.ico">
+
+		<title>Leandro Arellano</title>
+
+		<!-- Bootstrap core CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+		<link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+		
+		<!--JS Scripts-->
         <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
         <script src="js/skills.js"></script>
+		<script src="js/bootstrap.min.js"></script>
         <script src="js/block.js"></script>
         <script>
 			var myVar;
 
 			function myFunction() {
-			    myVar = setTimeout(showPage, 1000);
+			    myVar = setTimeout(showPage, 500);
 			}
 
 			function showPage() {
 			  document.getElementById("loader").style.display = "none";
 			  document.getElementById("pgContent").style.display = "block";
 			  document.getElementById("pPic").style.display = "block";
-			  document.getElementById("fname-text").style.display = "block";
-			  document.getElementById("lname-text").style.display = "block";			}
+			  document.getElementById("lname-text").style.display = "block";
+			  
+			}
 		</script>
-		<title>Leandro Arellano</title>
-	</head>
-<body onload="myFunction()">
-	<div id="loader"></div>
-	<div class="animate-page" id="pgContent" style="display:none;">
-		<div class="header">
-	    	<img class="img-container" id="pPic" src="images/leandro.jpg" style="display:none;">
-	        <span id="fname-text" style="display:none;">Leandro</span>
-	        <span id="lname-text" style="display:none;">Arellano</span>
-	        <span class="post-text">Test Automation Senior Analyst</span>
-	        <div class="divider"></div>
-	        <br />
-	        <br />
-	        <br />
-	        <br />
-	        <br />
-	        <br />
-	        <br />
-	        <br />
-	        <br />
-	        <br />
-	        <br />
-	        <br />
-	    </div>
-	    <div id="aboutme">
-	    	<div class="text-container" id="aboutContainer" >
-	    		<span class="title-text" id="aboutTitle" style="display:none;">
-	    			<a href="#" class="link">Who am I?</a>
-	    		</span>
-	            <p class="paragraph-text" id="paragraphs" style="display:none;">
-	            	Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec 		urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Nulla vitae mauris non felis mollis faucibus.Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna. Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis.
-	            </p>
-	            <p class="paragraph-text" id="paragraphs2" style="display:none;">
-	            	Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec 		urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Nulla vitae mauris non felis mollis faucibus.Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna. Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis.
-	            </p>
-	        </div>
-	    </div>
-	    <div id="skills">
-	    	<div class="text-container">
-	        	<span class="title-text" id="skillsTitle" style="display:none;">
-	        		<a href="#" class="link">Skills</a>
-	        	</span>
-	            <div id="skills-wrapper">
-	            	<!--<button class="button" onclick="callAll()">Show</button>-->
-	            	<div class="content-text-bold">Selenium WebDriver and IDE</div>
-	                <div id="myProgress">
-	  					<div id="myBar1">0%</div>
+		<!--document.getElementById("verticalLine1").style.height = document.getElementById('latestExpDesc').offsetHeight+"px";
+			  document.getElementById("verticalLine2").style.height = document.getElementById('latestExpDesc2').offsetHeight+"px";
+			  document.getElementById("verticalLine3").style.height = document.getElementById('latestExpDesc3').offsetHeight+"px";-->
+	  </head>
+	  <body onload="myFunction()">
+		<div id="loader"></div>
+		<div class="animate-page" id="pgContent" style="display:none;">
+			<div class="container" id="header">
+				<div class="row">
+				  <div class="col-xs-1 col-sm-1"></div>
+				  <div class="col-xs-10 col-sm-10">
+					<img class="img-container animated pulse" id="pPic" src="images/leandro.jpg" style="display:none;">
+				  </div>
+				  <div class="col-xs-1 col-sm-1"></div>
+				</div>
+				<div class="row">
+				  <div class="col-xs-1 col-sm-1"></div>
+				  <div class="col-xs-10 col-sm-10">
+					<span class="animated fadeInDown" id="fname-text">Leandro</span>
+					<span class="animated fadeInUp" id = "lname-text">Arellano</span>
+					<span class="animated slideInDown" id = "post-text">Test Automation Senior Analyst</span>
+					<div class="divider"></div>
+					<div><h1>CONTACTS CONTENT</h1></div>
+				  </div>
+				  <div class="col-xs-1 col-sm-1"></div>
+				</div>
+			</div>
+			<div id="aboutme">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-1 col-md-1"></div>
+						<div class="col-xs-10 col-md-10">
+							<h1 class="title-text" id="aboutTitle"><span class="link">Who am I?</span></h1>
+						</div>
 					</div>
-	                <div class="content-text-bold">Unified Functional Testing (HP UFT)</div>
-	                <div id="myProgress">
-	  					<div id="myBar2">0%</div>
+					<div class="row">
+						<div class="col-xs-1 col-md-1"></div>
+						<div class="col-xs-10 col-md-10" style="padding-bottom:50px;">
+							<p class="paragraph-text" id="paragraphs">
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec 		urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Nulla vitae mauris non felis mollis faucibus.Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna. Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis.
+							</p>
+							<p class="paragraph-text" id="paragraphs2">
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec 		urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Nulla vitae mauris non felis mollis faucibus.Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna. Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis.
+							</p>
+						</div>
 					</div>
-	            	<div class="content-text-bold" id="java">Java</div>
-	            	<div id="myProgress">
-	  					<div id="myBar3">0%</div>
+				</div>
+			</div>
+			<div id="skills" style="padding-bottom:50px;">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-1 col-md-1"></div>
+						<div class="col-xs-10 col-md-10">
+							<h1 class="title-text" id="skillsTitle"><span class="link">Skills</span></h1>
+						</div>
 					</div>
-	            	<div class="content-text-bold">Visual Basic .NET and VBA</div>
-	               	<div id="myProgress">
-	  					<div id="myBar4">0%</div>
+					<div class="row" id="skills-wrapper">
+						<div class="col-xs-1 col-md-1"></div>
+						<div class="col-xs-10 col-md-5">
+							<div class="content-text-bold">Selenium WebDriver and IDE</div>
+							<div id="myProgress">
+								<div id="myBar1">0%</div>
+							</div>
+							<div class="content-text-bold">Unified Functional Testing (HP UFT)</div>
+							<div id="myProgress">
+								<div id="myBar2">0%</div>
+							</div>
+							<div class="content-text-bold" id="java">Java</div>
+							<div id="myProgress">
+								<div id="myBar3">0%</div>
+							</div>
+							<div class="content-text-bold">Visual Basic .NET and VBA</div>
+							<div id="myProgress">
+								<div id="myBar4">0%</div>
+							</div>
+							<div class="content-text-bold">HP ALM</div>
+							<div id="myProgress">
+								<div id="myBar5">0%</div>
+							</div>
+							<div class="content-text-bold">Maven</div>
+							<div id="myProgress">
+								<div id="myBar6">0%</div>
+							</div>
+							<div class="content-text-bold">TestNG</div>
+							<div id="myProgress">
+								<div id="myBar7">0%</div>
+							</div>
+							<div class="content-text-bold">Photo Editing and Designing</div>
+							<div id="myProgress">
+								<div id="myBar16">0%</div>
+							</div>
+						</div>
+						<div class="col-xs-10 col-md-5 col-xs-offset-1 col-md-offset-0">
+							<div class="content-text-bold">ExtentReports</div>
+							<div id="myProgress">
+								<div id="myBar8">0%</div>
+							</div>
+							<div class="content-text-bold">SQL</div>
+							<div id="myProgress">
+								<div id="myBar9">0%</div>
+							</div>
+							<div class="content-text-bold">Firepath, XPath Concepts</div>
+							<div id="myProgress">
+								<div id="myBar10">0%</div>
+							</div>
+							<div class="content-text-bold">HTML5</div>
+							<div id="myProgress">
+								<div id="myBar11">0%</div>
+							</div>
+							<div class="content-text-bold">CSS</div>
+							<div id="myProgress">
+								<div id="myBar12">0%</div>
+							</div>
+							<div class="content-text-bold">JavaScript and JQuery</div>
+							<div id="myProgress">
+								<div id="myBar13">0%</div>
+							</div>
+							<div class="content-text-bold">PHP</div>
+							<div id="myProgress">
+								<div id="myBar14">0%</div>
+							</div>
+							<div class="content-text-bold">Cisco</div>
+							<div id="myProgress">
+								<div id="myBar15">0%</div>
+							</div>
+						</div>
 					</div>
-	                <div class="content-text-bold">HP ALM</div>
-	               	<div id="myProgress">
-	  					<div id="myBar5">0%</div>
+				</div>
+			</div>
+			
+			<div id="experience">
+				<div class="container">
+					<div class="row" style="padding-bottom: 20px;">
+						<div class="col-xs-1 col-md-1"></div>
+						<div class="col-xs-10 col-md-10">
+							<h1 class="title-text" id="expTitle"><span class="link">Experience & Education</span></h1>
+						</div>
 					</div>
-	                <div class="content-text-bold">Maven</div>
-	               	<div id="myProgress">
-	  					<div id="myBar6">0%</div>
+					<div class="row" style="padding-bottom: 30px;">
+							<div class="col-xs-1 col-md-1"></div>
+						<!--<div class="col-xs-11 col-sm-11">-->
+							<div class="col-xs-10 col-sm-10 col-md-5 columnmid" id="company1">
+								<span class="company-text" id="appear">Infor, PSSC Inc.</span>
+								<div class="position-text"><i>Quality Assurance Analyst (Automation)</i></div>
+								<p class="company-address" >Netpark Building, 5th ave., Bonifacio Global City, Taguig, Philippines</p>
+								<!--<div class="mapouter" align="center">
+									<div class="gmap_canvas">
+										<iframe id="gmap_canvas" src="https://maps.google.com/maps?q=net%20park&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+									</div>
+									<style>.mapouter{text-align:center;height:100%;width:100%; margin:0 auto;}.gmap_canvas {margin:0 auto; overflow:hidden;background:none!important;height:100%px;width:100%px;}</style>
+								</div>-->
+							</div>
+							<div class="col-xs-10 col-sm-10 col-md-5 col-xs-offset-1  col-md-offset-0 columnright" id="latestExpDesc">
+								<p class="company-desc">
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec 		urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Nulla vitae mauris non felis mollis faucibus.Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna. Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis.
+								</p>
+							</div>
+						<!--</div>-->
 					</div>
-	                <div class="content-text-bold">TestNG</div>
-	               	<div id="myProgress">
-	  					<div id="myBar7">0%</div>
+					
+					<div class="row" style="padding-bottom: 30px;">
+						<div class="col-xs-1 col-md-1"></div>
+						<div class="col-xs-10 col-sm-10 col-md-5 columnmid" id="company2">
+							<span class="company-text">Accenture Inc.</span>
+							<div class="position-text"><i>Test Automation Senior Analyst</i></div>
+							<p class="company-address">Uptown Place Tower 1, 11th Dr, Bonifacio Global City, Taguig, Philippines</p>
+						</div>
+						<div class="col-xs-10 col-sm-10 col-md-5 col-xs-offset-1 col-sm-offset-1 col-md-offset-0 columnright" id="latestExpDesc2">
+							<p class="company-desc">
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec 		urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Nulla vitae mauris non felis mollis faucibus.Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna. Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis.
+							</p>
+						</div>
 					</div>
-	                <div class="content-text-bold">ExtentReports</div>
-	               	<div id="myProgress">
-	  					<div id="myBar8">0%</div>
+					
+					<div class="row" style="padding-bottom: 30px;">
+						<div class="col-xs-1 col-md-1"></div>
+						<div class="col-xs-10 col-sm-10 col-md-5 columnmid" id="company3">
+							<span class="company-text">AMACC Fairview</span>
+							<div class="position-text"><i>Magna Cum Laude</i></div>
+							<p class="company-address">Bristol St., Lagro Caloocan City</p>
+						</div>
+						<div class="col-xs-10 col-sm-10 col-md-5 col-xs-offset-1 col-sm-offset-1 col-md-offset-0 columnright" id="latestExpDesc3">
+							<p class="company-desc">
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec 		urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Nulla vitae mauris non felis mollis faucibus.Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna. Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis.
+							</p>
+						</div>
 					</div>
-	                <div class="content-text-bold">SQL</div>
-	               	<div id="myProgress">
-	  					<div id="myBar9">0%</div>
+				</div>
+			</div>
+			
+			<!--<div id="experience">
+				<div class="container">
+					<div class="row" style="padding-bottom: 20px;">
+						<div class="col-xs-1 col-md-1"></div>
+						<div class="col-xs-10 col-md-10">
+							<h1 class="title-text" id="expTitle"><span class="link">Experience & Education</span></h1>
+						</div>
 					</div>
-	                <div class="content-text-bold">Firepath, XPath Concepts</div>
-	               	<div id="myProgress">
-	  					<div id="myBar10">0%</div>
+				
+					<div class="row" style="padding-bottom: 30px;">
+						<div class="col-xs-1 col-sm-1"></div>
+						<div class="col-xs-11 col-sm-11">
+							<div class="exp-container" id="latestExpDesc">
+								<div class="col-xs-10 col-sm-10 col-md-10 columnmid" style="background-color:white; padding:0px;" id="appear">
+									<div class="table">
+										<div class="tr">
+											<div class="td work-date date-title">
+												<div>August 2018 - Present</div>
+											</div>
+											<div class="td work-position">
+												<div class="position-title">Quality Assurance Analyst (Automation)</div>
+												<div class="company-title">Infor PSSC, Inc.</div>
+											</div>
+										</div>
+										<div class="tr">
+											<div class="td"></div>
+											<div class="td"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
-	                <div class="content-text-bold">HTML5</div>
-	               	<div id="myProgress">
-	  					<div id="myBar11">0%</div>
+					<div class="row">
+						<div class="col-xs-1 col-sm-1"></div>
+						<div class="exp-container" id="latestExpDesc2">
+							<div class="col-xs-10 col-sm-10 col-md-5 columnmid" style="background-color:white; padding:0px;">
+								
+							</div>
+						</div>
 					</div>
-	                <div class="content-text-bold">CSS</div>
-	               	<div id="myProgress">
-	  					<div id="myBar12">0%</div>
-					</div>
-	                <div class="content-text-bold">JavaScript and JQuery</div>
-	               	<div id="myProgress">
-	  					<div id="myBar13">0%</div>
-					</div>
-	                <div class="content-text-bold">PHP</div>
-	               	<div id="myProgress">
-	  					<div id="myBar14">0%</div>
-					</div>
-	                <div class="content-text-bold">Cisco</div>
-	               	<div id="myProgress">
-	  					<div id="myBar15">0%</div>
-					</div>
-	             </div>
-	         </div>
-	    </div>
-
-	    <div id="experience">
-	    	<div class="text-container">
-	    		<span class="title-text" id="expTitle" style="display:none;">
-	    			<a href="#" class="link">Experience & Education</a>
-	    		</span>
-	    		<div class="exp-container" id="exp1">
-	    			<div class="columnleft">
-	    				<div class="dot"></div>
-	    				<div class="verticalLine"></div>
-	    			</div>
-	    			<div class="columnmid" id="company1">
-	    				<span class="company-text" id="appear">Infor, PSSC Inc.</span>
-	    				<div class="position-text"><i>Quality Assurance Analyst (Automation)</i></div>
-	    				<p class="company-address" >Netpark Building, 5th ave., Bonifacio Global City, Taguig, Philippines</p>
-	    			</div>
-	    			<div class="columnright" id="latestExpDesc">
-	    				<p class="company-desc">
-	    					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec 		urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Nulla vitae mauris non felis mollis faucibus.Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna. Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis.
-	    				</p>
-	    			</div>
-	    		</div>
-
-	    		<div class="exp-container" id="exp2">
-	    			<div class="columnleft">
-	    				<div class="dot"></div>
-	    				<div class="verticalLine"></div>
-	    			</div>
-	    			<div class="columnmid" id="company2">
-	    				<span class="company-text">Accenture Inc.</span>
-	    				<div class="position-text"><i>Test Automation Senior Analyst</i></div>
-	    				<p class="company-address">Uptown Place Tower 1, 11th Dr, Bonifacio Global City, Taguig, Philippines</p>
-	    			</div>
-	    			<div class="columnright" id="latestExpDesc2">
-	    				<p class="company-desc">
-	    					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec 		urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Nulla vitae mauris non felis mollis faucibus.Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna. Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis.
-	    				</p>
-	    			</div>
-	    		</div>
-
-	    		<div class="exp-container" id="exp3">
-	    			<div class="columnleft">
-	    				<div class="dot educ"></div>
-	    				<div class="verticalLine"></div>
-	    			</div>
-	    			<div class="columnmid" id="company3">
-	    				<span class="company-text">AMACC Fairview</span>
-	    				<div class="position-text"><i>Magna Cum Laude</i></div>
-	    				<p class="company-address">Bristol St., Lagro Caloocan City</p>
-	    			</div>
-	    			<div class="columnright" id="latestExpDesc3">
-	    				<p class="company-desc">
-	    					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec 		urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Nulla vitae mauris non felis mollis faucibus.Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna. Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis.
-	    				</p>
-	    			</div>
-	    		</div>
-	    	</div>
-	    </div>
-	</div>
-</body>
-</html>
+				</div>
+			</div>-->
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</div>
+	  </body>
+		
+	</html>
+		

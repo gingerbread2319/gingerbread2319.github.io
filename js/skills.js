@@ -222,6 +222,20 @@ function move1() {
 					}
 				}
 			}
+			function move16() {
+    			var elem = document.getElementById("myBar16"); 
+				var width = 10;
+				var id = setInterval(frame, 10);
+				function frame() {
+					if (width >= 60) {
+						clearInterval(id);
+					} else {
+						width++; 
+						elem.style.width = width + '%'; 
+						elem.innerHTML = width * 1 + '%';
+					}
+				}
+			}
 			
 			function callAll() {
 				move1();
@@ -239,6 +253,7 @@ function move1() {
 				move13();
 				move14();
 				move15();
+				move16();
 			}
 			var counter = 0;
 			$(window).scroll(function() {

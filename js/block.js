@@ -34,7 +34,7 @@ $(window).scroll(function() {
     } else if (checkVisible($('#company2')) && expCompany2Counter == 0) {
         showCompany2();
         expCompany2Counter = 1;
-    } else if (checkVisible($('#java')) && skillsCounter == 0) {
+    } else if (checkVisible($('#skillsTitle')) && skillsCounter == 0) {
         showSkillsTitle();
         skillsCounter = 1;
     } else if (checkVisible($('#company3')) && expCompany3Counter == 0) {
