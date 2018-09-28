@@ -78,25 +78,31 @@ function showSkillsTitle() {
 }
 
 function showExpDesc1() {
-    document.getElementById("latestExpDesc").classList.add("pop");
+    document.getElementById("latestExpDesc").classList.add("animated");
+	document.getElementById("latestExpDesc").classList.add("bounceIn");
 }
 
 function showExpDesc2() {
-    document.getElementById("latestExpDesc2").classList.add("pop");
+    document.getElementById("latestExpDesc2").classList.add("animated");
+	document.getElementById("latestExpDesc2").classList.add("bounceIn");
 }
 
 function showExpDesc3() {
-    document.getElementById("latestExpDesc3").classList.add("pop");
+    document.getElementById("latestExpDesc3").classList.add("animated");
+	document.getElementById("latestExpDesc3").classList.add("bounceIn");
 }
 
 function showCompany1() {
-    document.getElementById("company1").classList.add("pop");
+    document.getElementById("company1").classList.add("animated");
+	document.getElementById("company1").classList.add("fadeIn");
 }
 
 function showCompany2() {
-    document.getElementById("company2").classList.add("pop");
+    document.getElementById("company2").classList.add("animated");
+	document.getElementById("company2").classList.add("fadeIn");
 }
 
 function showCompany3() {
-    document.getElementById("company3").classList.add("pop");
+     document.getElementById("company2").classList.add("animated");
+	 document.getElementById("company2").classList.add("fadeIn");
 }
