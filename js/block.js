@@ -103,6 +103,6 @@ function showCompany2() {
 }
 
 function showCompany3() {
-     document.getElementById("company2").classList.add("animated");
-	 document.getElementById("company2").classList.add("fadeIn");
+     document.getElementById("company3").classList.add("animated");
+	 document.getElementById("company3").classList.add("fadeIn");
 }
