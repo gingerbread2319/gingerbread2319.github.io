@@ -58,23 +58,33 @@ function checkVisible( elm, eval ) {
 }
 
 function showAbout() {
-	document.getElementById("aboutTitle").style.display = "block";
+	document.getElementById("aboutTitle").style.opacity=1;
+	document.getElementById("aboutTitle").classList.add("animated");
+	document.getElementById("aboutTitle").classList.add("fadeInUp");
 }
 
 function showParags() {
-    document.getElementById("paragraphs").style.display = "block";
+	document.getElementById("paragraphs").style.opacity=1;
+    document.getElementById("paragraphs").classList.add("animated");
+	document.getElementById("paragraphs").classList.add("bounceInUp");
 }
 
 function showParags2() {
-    document.getElementById("paragraphs2").style.display = "block";
+	document.getElementById("paragraphs2").style.opacity=1;
+    document.getElementById("paragraphs2").classList.add("animated");
+	document.getElementById("paragraphs2").classList.add("bounceInUp");
 }
 
 function showExpTitle() {
-    document.getElementById("expTitle").style.display = "block";
+    document.getElementById("expTitle").style.opacity=1;
+	document.getElementById("expTitle").classList.add("animated");
+	document.getElementById("expTitle").classList.add("fadeInUp");
 }
 
 function showSkillsTitle() {
-    document.getElementById("skillsTitle").style.display = "block";
+    document.getElementById("skillsTitle").style.opacity=1;
+	document.getElementById("skillsTitle").classList.add("animated");
+	document.getElementById("skillsTitle").classList.add("fadeInUp");
 }
 
 function showExpDesc1() {

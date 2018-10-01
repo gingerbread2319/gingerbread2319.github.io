@@ -5,13 +5,21 @@ body{
 }
 #header {
 	width: 100%;
-	max-width: 2500px;
-	height: 100%;
+	max-width: 100%;
+	height: 100vh;
 	max-height: 100%;
-	background-image:url(../images/BG.jpg);
+	background-image:url(../images/bg10.jpg);
 	background-size: cover;
-	padding-top: 5%;
+	/*padding-top: 5%;*/
 	object-fit: cover;
+	margin:auto;
+	padding-top: 50vh;
+	
+}
+
+#name-container {
+	/* margin: auto; */
+	text-align: center;
 }
 
 #coverPage {
@@ -42,41 +50,33 @@ body{
 }
 
 #fname-text {
-	padding-top: 40px;
+	/*padding-top: 40px;*/
+	display:inline-block;
 	text-align:center;
 	font-family: 'Lato Light', sans-serif;
 	/*font-size: 60px;*/
-	font-size: 6rem;
-	color: #f7f7f7;
-	/*margin-left: auto;
-	margin-right: auto;*/
-	display: block;
-	/*-webkit-animation-name: animatefname;*/
+	font-size: 60px;
+	/* color: #f7f7f7; */
+	/*color: #dbdbdb;*/
+	color: #FFFFFF;
+	/*margin:auto;*/
   	-webkit-animation-duration: 1s;
 	animation-duration: 1s;
-  	/*-webkit-transition-timing-function: ease-in;
-  	animation-name: animatefname;
-  	animation-duration: 1.5s;
-  	transition-timing-function: ease-in;*/
 }
 
 #lname-text {
-	margin-top: -20px;
+	display:inline-block;
+	/*margin-top: -20px;*/
 	text-align:center;
 	font-family: 'Lato Medium', sans-serif;
 	/*font-size: 75px;*/
-	font-size: 7.5rem;
-	color: #8cbcd0;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-	/*-webkit-animation-name: animatelname;
-  	-webkit-animation-duration: 1.7s;
-  	-webkit-transition-timing-function: ease-in;*/
-  	/*animation-name: animatelname;*/
-  	animation-duration: 0.7s;
+	/*font-size: 7.5rem;*/
+	/* color: #dbdbdb; */
+	color: #FFFFFF;
+	font-size: 60px;
+	/*color: #8cbcd0;*/
+  	animation-duration: 0.9s;
 	-webkit-animation-duration: 0.9s;
-  	/*transition-timing-function: ease-in;*/
 }
 
 #post-text {
@@ -84,23 +84,28 @@ body{
 	text-align:center;
 	font-family: 'Lato Light', sans-serif;
 	font-size: 22px;
-	color: #f7f7f7;
+	/* color: #f7f7f7; */
+	/* color: #dbdbdb; */
+	color: #FFFFFF;
 	/*margin-left: auto;
 	margin-right: auto;*/
 	display: block;
 	animation-duration: 1.5s
+	padding-top:20px;
 	-webkit-animation-duration: 1.5s;
 }
 
 .divider {
 	/*width: 68.57%;*/
-	width: 80%;
+	width: 100%;
 	max-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
 	height: 10px;
-	border-bottom: 2px solid #939393;
-	padding-top: 30px;
+	/*border-bottom: 2px solid #939393;*/
+	border-bottom: 2px solid #f7f7f7;
+	padding-top: 10px;
+	margin-bottom:10px;
 }
 
 #aboutme {
@@ -331,37 +336,41 @@ p.paragraph-text {
 }
 
 #aboutTitle {
-	-webkit-animation-name: animateAboutTitle;
-  	-webkit-animation-duration: 1.4s;
+	opacity: 0;
+	/* -webkit-animation-name: animateAboutTitle; */
+  	-webkit-animation-duration: 0.7s;
   	/*-webkit-transition-timing-function: ease;*/
-  	animation-name: animateAboutTitle;
-  	animation-duration: 1.4s;
+  	/* animation-name: animateAboutTitle; */
+  	animation-duration: 0.7s;
   	/*transition-timing-function: ease;*/
   	/*margin-bottom: -30px;*/
 }
 
 #paragraphs, #paragraphs2 {
-	-webkit-animation-name: animateParagraphs;
-  	-webkit-animation-duration: 1.5s;
-  	animation-name: animateParagraphs;
-  	animation-duration: 1.5s;
+	opacity:0;
+	/*-webkit-animation-name: animateParagraphs;*/
+  	-webkit-animation-duration: 0.7s;
+  	/* animation-name: animateParagraphs; */
+  	animation-duration: 0.7s;
 }
 
 #expTitle {
-	-webkit-animation-name: animateExpTitle;
-  	-webkit-animation-duration: 1.4s;
+	opacity: 0;
+	/* -webkit-animation-name: animateExpTitle; */
+  	-webkit-animation-duration: 0.7s;
   	/*-webkit-transition-timing-function: ease;*/
-  	animation-name: animateExpTitle;
-  	animation-duration: 1.4s;
+  	/* animation-name: animateExpTitle; */
+  	-webkit-animation-duration: 0.7s;
   	/*transition-timing-function: ease;*/
 }
 
 #skillsTitle, #educationTitle {
-	-webkit-animation-name: animateSkillsTitle;
-  	-webkit-animation-duration: 1.4s;
+	opacity: 0;
+	/* -webkit-animation-name: animateSkillsTitle; */
+  	-webkit-animation-duration: 0.7s;
   	/*-webkit-transition-timing-function: ease;*/
-  	animation-name: animateSkillsTitle;
-  	animation-duration: 1.4s;
+  	/* animation-name: animateSkillsTitle; */
+  	animation-duration: 0.7s;
   	/*margin-bottom: -50px;*/
   	/*transition-timing-function: ease;*/
 }
@@ -463,7 +472,6 @@ p.paragraph-text {
 .td{ 
     display: table-cell;
 }
-
 
 /*LOADER ANIMATION*/
 /* Center the loader */
@@ -618,6 +626,11 @@ p.paragraph-text {
 
 /*media queries*/
 @media screen and (max-width: 600px) {
+
+  #header {
+	height: 100vh;
+	padding-top: 40vh;
+  }
   .title-text {
     font-size: 35px;
   }
@@ -628,10 +641,13 @@ p.paragraph-text {
   
   #fname-text{
 	  font-size: 40px;
+	  padding-left: 7px;
   }
   
   #lname-text{
-	  font-size: 55px;
+	  font-size: 50px;
+	  margin-top: -20px;
+	  text-align: center;
   }
   
   #post-text{
@@ -658,4 +674,22 @@ p.paragraph-text {
 	font-size: 12px;
   }
   
+}
+
+/*media queries*/
+@media screen and (min-width: 768px) {
+	#header {
+		height: 100vh;
+		padding-top: 40vh;
+	}
+}
+@media screen and (max-width: 320px) {
+	.img-container {
+		margin-left: -5px;
+	}
+	
+	#header {
+		height: 100vh;
+		padding-top: 30vh;
+	}
 }
