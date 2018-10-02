@@ -14,6 +14,7 @@
 		<!-- Bootstrap core CSS -->
 		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/loader.css">
 		<link rel="stylesheet" href="css/style.css" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 <!-- 		IE10 viewport hack for Surface/desktop Windows 8 bug
@@ -28,7 +29,7 @@
 			var myVar;
 
 			function myFunction() {
-			    myVar = setTimeout(showPage, 500);
+			    myVar = setTimeout(showPage, 3000);
 			}
 
 			function showPage() {
@@ -44,7 +45,15 @@
 			  document.getElementById("verticalLine3").style.height = document.getElementById('latestExpDesc3').offsetHeight+"px";-->
 	  </head>
 	  <body onload="myFunction()">
-		<div id="loader"></div>
+		<div id="loader">
+			<div class="cssload-thecube">
+				<div class="cssload-cube cssload-c1"></div>
+				<div class="cssload-cube cssload-c2"></div>
+				<div class="cssload-cube cssload-c4"></div>
+				<div class="cssload-cube cssload-c3"></div>
+			</div>
+			<div class="loadingText">Loading...</div>
+		</div>
 		<div class="animate-page" id="pgContent" style="display:none;">
 
 

@@ -475,7 +475,7 @@ p.paragraph-text {
 
 /*LOADER ANIMATION*/
 /* Center the loader */
-#loader {
+/*#loader {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -500,7 +500,16 @@ p.paragraph-text {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}*/
+
+#loader{
+	position: relative;
+	top: 40vh;
+	margin: auto;
 }
+
+
+
 
 /* Add animation to "page content" */
 .animate-page {
@@ -681,6 +690,203 @@ p.paragraph-text {
   
 }
 
+
+/*LOADER*/
+
+.cssload-thecube {
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+	/* margin-top: 47px; */
+	/* top: 30vh; */
+	position: relative;
+	transform: rotateZ(45deg);
+		-o-transform: rotateZ(45deg);
+		-ms-transform: rotateZ(45deg);
+		-webkit-transform: rotateZ(45deg);
+		-moz-transform: rotateZ(45deg);
+}
+.cssload-thecube .cssload-cube {
+	position: relative;
+	transform: rotateZ(45deg);
+		-o-transform: rotateZ(45deg);
+		-ms-transform: rotateZ(45deg);
+		-webkit-transform: rotateZ(45deg);
+		-moz-transform: rotateZ(45deg);
+}
+.cssload-thecube .cssload-cube {
+	float: left;
+	width: 50%;
+	height: 50%;
+	position: relative;
+	transform: scale(1.1);
+		-o-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		-webkit-transform: scale(1.1);
+		-moz-transform: scale(1.1);
+}
+.cssload-thecube .cssload-cube:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(107,107,107);
+	animation: cssload-fold-thecube 3.12s infinite linear both;
+		-o-animation: cssload-fold-thecube 3.12s infinite linear both;
+		-ms-animation: cssload-fold-thecube 3.12s infinite linear both;
+		-webkit-animation: cssload-fold-thecube 3.12s infinite linear both;
+		-moz-animation: cssload-fold-thecube 3.12s infinite linear both;
+	transform-origin: 100% 100%;
+		-o-transform-origin: 100% 100%;
+		-ms-transform-origin: 100% 100%;
+		-webkit-transform-origin: 100% 100%;
+		-moz-transform-origin: 100% 100%;
+}
+.cssload-thecube .cssload-c2 {
+	transform: scale(1.1) rotateZ(90deg);
+		-o-transform: scale(1.1) rotateZ(90deg);
+		-ms-transform: scale(1.1) rotateZ(90deg);
+		-webkit-transform: scale(1.1) rotateZ(90deg);
+		-moz-transform: scale(1.1) rotateZ(90deg);
+}
+.cssload-thecube .cssload-c3 {
+	transform: scale(1.1) rotateZ(180deg);
+		-o-transform: scale(1.1) rotateZ(180deg);
+		-ms-transform: scale(1.1) rotateZ(180deg);
+		-webkit-transform: scale(1.1) rotateZ(180deg);
+		-moz-transform: scale(1.1) rotateZ(180deg);
+}
+.cssload-thecube .cssload-c4 {
+	transform: scale(1.1) rotateZ(270deg);
+		-o-transform: scale(1.1) rotateZ(270deg);
+		-ms-transform: scale(1.1) rotateZ(270deg);
+		-webkit-transform: scale(1.1) rotateZ(270deg);
+		-moz-transform: scale(1.1) rotateZ(270deg);
+}
+.cssload-thecube .cssload-c2:before {
+	animation-delay: 0.39s;
+		-o-animation-delay: 0.39s;
+		-ms-animation-delay: 0.39s;
+		-webkit-animation-delay: 0.39s;
+		-moz-animation-delay: 0.39s;
+}
+.cssload-thecube .cssload-c3:before {
+	animation-delay: 0.78s;
+		-o-animation-delay: 0.78s;
+		-ms-animation-delay: 0.78s;
+		-webkit-animation-delay: 0.78s;
+		-moz-animation-delay: 0.78s;
+}
+.cssload-thecube .cssload-c4:before {
+	animation-delay: 1.17s;
+		-o-animation-delay: 1.17s;
+		-ms-animation-delay: 1.17s;
+		-webkit-animation-delay: 1.17s;
+		-moz-animation-delay: 1.17s;
+}
+
+.loadingText {
+	color: rgb(107,107,107);
+	text-align: center;
+	display: block;
+	font-size: 20px;
+	padding-top: 25px;
+	margin:auto;
+	padding-left: 10px;
+}
+
+
+
+
+@keyframes cssload-fold-thecube {
+	0%, 10% {
+		transform: perspective(133px) rotateX(-180deg);
+		opacity: 0;
+	}
+	25%,
+				75% {
+		transform: perspective(133px) rotateX(0deg);
+		opacity: 1;
+	}
+	90%,
+				100% {
+		transform: perspective(133px) rotateY(180deg);
+		opacity: 0;
+	}
+}
+
+@-o-keyframes cssload-fold-thecube {
+	0%, 10% {
+		-o-transform: perspective(133px) rotateX(-180deg);
+		opacity: 0;
+	}
+	25%,
+				75% {
+		-o-transform: perspective(133px) rotateX(0deg);
+		opacity: 1;
+	}
+	90%,
+				100% {
+		-o-transform: perspective(133px) rotateY(180deg);
+		opacity: 0;
+	}
+}
+
+@-ms-keyframes cssload-fold-thecube {
+	0%, 10% {
+		-ms-transform: perspective(133px) rotateX(-180deg);
+		opacity: 0;
+	}
+	25%,
+				75% {
+		-ms-transform: perspective(133px) rotateX(0deg);
+		opacity: 1;
+	}
+	90%,
+				100% {
+		-ms-transform: perspective(133px) rotateY(180deg);
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes cssload-fold-thecube {
+	0%, 10% {
+		-webkit-transform: perspective(133px) rotateX(-180deg);
+		opacity: 0;
+	}
+	25%,
+				75% {
+		-webkit-transform: perspective(133px) rotateX(0deg);
+		opacity: 1;
+	}
+	90%,
+				100% {
+		-webkit-transform: perspective(133px) rotateY(180deg);
+		opacity: 0;
+	}
+}
+
+@-moz-keyframes cssload-fold-thecube {
+	0%, 10% {
+		-moz-transform: perspective(133px) rotateX(-180deg);
+		opacity: 0;
+	}
+	25%,
+				75% {
+		-moz-transform: perspective(133px) rotateX(0deg);
+		opacity: 1;
+	}
+	90%,
+				100% {
+		-moz-transform: perspective(133px) rotateY(180deg);
+		opacity: 0;
+	}
+}
+
+/* END OF LOADER*/
+
 /*media queries*/
 @media screen and (min-width: 601px) {
 	.divider {
@@ -692,6 +898,11 @@ p.paragraph-text {
 		height: 100vh;
 		padding-top: 35vh;
 	}
+	
+	.loadingText {
+		font-size: 15px;
+	}
+	
 }
 @media screen and (max-width: 568px) and (max-height: 320px) {
 	.img-container {
@@ -701,6 +912,14 @@ p.paragraph-text {
 	#header {
 		height: 100vh;
 		padding-top: 30vh;
+	}
+	
+	#loader {
+		top: 30vh;
+	}
+	
+	.loadingText {
+		font-size: 15px;
 	}
 	
 	#lname-text{
@@ -721,6 +940,14 @@ p.paragraph-text {
 		height: 100vh;
 		padding-top: 40vh;
 	}
+	
+	#loader{
+		top: 45vh;
+	}
+	
+	.loadingText {
+		font-size: 15px;
+	}
 }
 
 /*media queries*/
@@ -734,4 +961,13 @@ p.paragraph-text {
 		height: 100vh;
 		padding-top: 45vh;
 	}
+	
+	#loader {
+		top: 45vh;
+	}
+	
+	.loadingText {
+		font-size: 15px;
+	}
+	
 }
