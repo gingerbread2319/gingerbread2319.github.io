@@ -57,7 +57,7 @@
 	url("css/fonts/Lato-HeavyItalic.ttf") format("truetype"),
 	url("css/fonts/Lato-HeavyItalic.woff2") format("woff2");
 
-	font-family: "Lato Italic";
+	font-family: "Lato-Italic";
 	src: url("css/fonts/Lato-Italic.eot");
 	src: 
 	url("css/fonts/Lato-Italic.woff") format("woff"),
@@ -78,7 +78,7 @@
 	url("css/fonts/Lato-LightItalic.ttf") format("truetype"),
 	url("css/fonts/Lato-LightItalic.woff2") format("woff2");
 
-	font-family: "Lato Medium";
+	font-family: "Lato-Medium";
 	src: url("css/fonts/Lato-Medium.eot");
 	src: 
 	url("css/fonts/Lato-Medium.woff") format("woff"),
@@ -182,7 +182,7 @@ body{
 	/*padding-top: 40px;*/
 	display:inline-block;
 	text-align:center;
-	font-family: 'Lato-MediumItalic', sans-serif;
+	font-family: 'Lato-Medium', sans-serif;
 	/*font-size: 60px;*/
 	font-size: 60px;
 	/* color: #f7f7f7; */
@@ -197,7 +197,7 @@ body{
 	display:inline-block;
 	/*margin-top: -20px;*/
 	text-align:center;
-	font-family: 'Lato Medium Italic', sans-serif;
+	font-family: 'Lato-Medium', sans-serif;
 	/*font-size: 75px;*/
 	/*font-size: 7.5rem;*/
 	/* color: #dbdbdb; */
