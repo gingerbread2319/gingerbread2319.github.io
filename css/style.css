@@ -212,7 +212,7 @@ body{
 	/*padding-top: 20px;*/
 	text-align:center;
 	font-family: 'Lato Thin', sans-serif;
-	font-size: 22px;
+	font-size: 18px;
 	/* color: #f7f7f7; */
 	/* color: #dbdbdb; */
 	color: #FFFFFF;
@@ -266,7 +266,7 @@ body{
 .title-text {
 	padding-top:20px;
 	text-align: left;
-	font-family: 'Lato Regular', sans-serif;
+	font-family: 'Lato-Medium', sans-serif;
 	font-size: 50px;
 	/*font-size: 4.39vw;*/
 	color: #8cbcd0;
